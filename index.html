@@ -10,18 +10,19 @@
     <div class="container">
       <h1>Password Generator</h1>
       <p id="tampilpass"></p>
-      <button onclick="bikin()">Generate!</button>
+      <input type="range" min="4" max="50" id="slider">
+      <p id="tampilslider">25</p>
       <div class="moreoption">
-        <input type="checkbox" id="hurufbesarsaja" />
+        <input type="checkbox" id="hurufbesarsaja" checked/>
         <label for="hurufbesarsaja">Huruf Besar</label>
 
-        <input type="checkbox" id="hurufkecil" />
+        <input type="checkbox" id="hurufkecil" checked/>
         <label for="hurufkecil">Huruf Kecil</label>
 
-        <input type="checkbox" id="angka" />
+        <input type="checkbox" id="angka" checked />
         <label for="angka">Angka</label>
 
-        <input type="checkbox" id="simbol" />
+        <input type="checkbox" id="simbol" checked />
         <label for="simbol">Simbol</label>
       </div>
     </div>

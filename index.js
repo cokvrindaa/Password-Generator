@@ -2,18 +2,24 @@ let hurufKecil = "abcdefghijklmnopqrstuvwxyz";
 let hurufBesar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let nomor = "0123456789";
 let simbol = "!@#$%&*()+=?-";
-let panjangKarakter = 100;
 let semuaKarakter = hurufBesar + hurufKecil + nomor + simbol;
 let chekHurufbesar = document.getElementById("hurufbesarsaja");
 let checkHurufkecil = document.getElementById("hurufkecil");
 let checkSimbol = document.getElementById("simbol");
 let checkAngka = document.getElementById("angka");
 let tampilpas = document.getElementById("tampilpass");
-let a = 0;
-let b = 0;
-let c = 0;
-let d = 0;
-
+let a = chekHurufbesar.checked ? 1 : 0;
+let b = checkHurufkecil.checked ? 1 : 0;
+let c = checkAngka.checked ? 1 : 0;
+let d = checkSimbol.checked ? 1 : 0;
+let slider = document.getElementById("slider");
+let tampilslider = document.getElementById("tampilslider");
+slider.addEventListener("input", function () {
+  tampilslider.textContent = slider.value;
+  panjangKarakter = slider.value;
+  bikin()
+});
+let panjangKarakter = slider.value;
 // pengecekan check box huruf besar
 chekHurufbesar.addEventListener("click", function () {
   if (chekHurufbesar.checked == true) {
@@ -23,6 +29,7 @@ chekHurufbesar.addEventListener("click", function () {
     a = 0;
     console.log(a);
   }
+  bikin()
 });
 checkHurufkecil.addEventListener("click", function () {
   if (checkHurufkecil.checked == true) {
@@ -32,6 +39,7 @@ checkHurufkecil.addEventListener("click", function () {
     b = 0;
     console.log(b);
   }
+  bikin()
 });
 checkAngka.addEventListener("click", function () {
   if (checkAngka.checked == true) {
@@ -41,6 +49,7 @@ checkAngka.addEventListener("click", function () {
     c = 0;
     console.log(c);
   }
+  bikin()
 });
 checkSimbol.addEventListener("click", function () {
   if (checkSimbol.checked == true) {
@@ -50,6 +59,7 @@ checkSimbol.addEventListener("click", function () {
     d = 0;
     console.log(d);
   }
+  bikin()
 });
 
 function bikin() {
