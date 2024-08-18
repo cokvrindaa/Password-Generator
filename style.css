@@ -1,0 +1,148 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+/* Defult : Desktop */
+.container {
+  padding: 30px 3%;
+}
+.container .judul {
+  font-size: 100px;
+}
+.container #tampilpass {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: -20px;
+}
+input[type="range"] {
+  width: 1310px; /* Atur lebar slider */
+  height: 10px; /* Atur tinggi slider */
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5); /* Perbesar checkbox */
+  -webkit-transform: scale(1.5); /* Untuk dukungan di browser berbasis WebKit */
+}
+
+.container .moreoption {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  gap: 20px;
+  margin-left: 4px;
+}
+.container #tampilslider {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.container #keamanan {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.last {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 3%;
+  font-weight: bold;
+}
+#alert{
+  width: 100%;
+  margin: auto;
+  font-weight: bold ;
+  font-size: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  display: none;
+}
+#copyBtn{
+  background-color: #0075ff;
+  border: none;
+  color: #ffffff;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+/* Responive */
+/* Laptop 1400 */
+@media (max-width: 1400px) {
+  .container .judul {
+    font-size: 80px;
+  }
+  .container #tampilpass {
+    font-size: 30px;
+  }
+  input[type="range"] {
+    width: 1210px; /* Atur lebar slider */
+    height: 10px; /* Atur tinggi slider */
+  }
+}
+@media (max-width: 1300px) {
+  input[type="range"] {
+    width: 1000px; /* Atur lebar slider */
+    height: 10px; /* Atur tinggi slider */
+  }
+}
+/* Tab */
+@media (max-width: 1100px) {
+  input[type="range"] {
+    width: 700px; /* Atur lebar slider */
+    height: 10px; /* Atur tinggi slider */
+  }
+  .container .judul {
+    font-size: 80px;
+    margin-bottom: 10px;
+  }
+  .container #tampilpass {
+    font-size: 30px;
+    max-width: 98%; /* Pastikan elemen tidak lebih lebar dari container */
+    margin-bottom: 10px;
+    display: flex;
+  }
+}
+/* HP */
+@media (max-width: 800px) {
+  .container .judul {
+    font-size: 60px;
+    margin-bottom: 30px;
+    line-height: 60px;
+  }
+  .container #tampilpass {
+    font-size: 20px;
+    word-wrap: break-word; /* Memastikan teks akan membungkus ke baris baru jika terlalu panjang */
+    overflow: hidden; /* Mencegah overflow elemen */
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%; /* Pastikan elemen tidak lebih lebar dari container */
+  }
+  input[type="range"] {
+    width: 350px; /* Atur lebar slider */
+    height: 10px; /* Atur tinggi slider */
+  }
+  .container .moreoption {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap; /* Memungkinkan elemen untuk turun ke baris berikutnya jika diperlukan */
+    gap: 15px;
+    margin-left: 4px;
+  }
+  input[type="checkbox"] {
+    transform: scale(0); /* Perbesar checkbox */
+    -webkit-transform: scale(
+      1.5
+    ); /* Untuk dukungan di browser berbasis WebKit */
+  }
+}
