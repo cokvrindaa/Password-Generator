@@ -111,9 +111,9 @@ function bikin() {
       keamanan.textContent = "Sangat Kuat 😎";
     }
   }
+
 }
 let copyBtn = document.getElementById("copyBtn");
-
 copyBtn.addEventListener("click", function() {
   let password = tampilpas.textContent;
   

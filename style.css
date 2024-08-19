@@ -113,20 +113,13 @@ input[type="checkbox"] {
   }
 }
 /* HP */
-@media (max-width: 800px) {
+@media (max-width: 890px) {
   .container .judul {
     font-size: 60px;
     margin-bottom: 30px;
     line-height: 60px;
   }
-  .container #tampilpass {
-    font-size: 20px;
-    word-wrap: break-word; /* Memastikan teks akan membungkus ke baris baru jika terlalu panjang */
-    overflow: hidden; /* Mencegah overflow elemen */
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%; /* Pastikan elemen tidak lebih lebar dari container */
-  }
+
   input[type="range"] {
     width: 350px; /* Atur lebar slider */
     height: 10px; /* Atur tinggi slider */
@@ -144,5 +137,21 @@ input[type="checkbox"] {
     -webkit-transform: scale(
       1.5
     ); /* Untuk dukungan di browser berbasis WebKit */
+  }
+  #tampilpass {
+    font-size: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+  }
+  #copyBtn{
+    background-color: #0075ff;
+    border: none;
+    color: #ffffff;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
   }
 }
