@@ -1,13 +1,13 @@
-02/07/24 : Frist idea
-03/07/24 : Menggenerasikan password dengan sederhana (huruf kecil & angka)
-04/07/24 : Menggenerasikan password dengan sederhana (huruf kecil, besar, angka dan simbol)
-05/07/24 : Mengkategorikan tipe password yang diiingin kan user (checkbox h.besar, kecil angka, simbol), dan pertama kali up github
-06/07/24 : Menghilangkan button bikin dan menggantikanya dengan otomatis Menggenerasikan passwordnya tanpa meneekan tombol "generete!". Memperbarui mekanisma centang (saat halaman di muat semua kecentang)
-07/07/24 - 17/07/24 : No update
-18/07/24 : Verry big update
+02/08/24 : Frist idea
+03/08/24 : Menggenerasikan password dengan sederhana (huruf kecil & angka)
+04/08/24 : Menggenerasikan password dengan sederhana (huruf kecil, besar, angka dan simbol)
+05/08/24 : Mengkategorikan tipe password yang diiingin kan user (checkbox h.besar, kecil angka, simbol), dan pertama kali up github
+06/08/24 : Menghilangkan button bikin dan menggantikanya dengan otomatis Menggenerasikan passwordnya tanpa meneekan tombol "generete!". Memperbarui mekanisma centang (saat halaman di muat semua kecentang)
+07/08/24 - 17/07/24 : No update
+18/08/24 : Verry big update
 Note update for 18/07/24:
 Design CSS, Perbaikan eror, Perbaikan panjang password tidak sesuai dengan slider, copy ke klipboard, indikator tingkat keamanan
-19/07/24 : Responsif lebih baik.
+19/08/24 : Responsif lebih baik.
 
 
 "Projek simpel mingguan."
